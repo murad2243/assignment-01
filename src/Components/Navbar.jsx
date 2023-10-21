@@ -52,7 +52,7 @@ import styled from "styled-components";
 				<button className="nav-btn nav-close-btn" 
           onClick={showNavbar}>
 						
-                    close
+					<p style={{color:"white"}}>X</p>	
 				</button>
 				
 				
@@ -74,7 +74,11 @@ import styled from "styled-components";
 				 >
 				
 				
-                open
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M5.33447 23.9999H26.6678" stroke="#FBFBFB" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M5.33447 15.9999H26.6678" stroke="#FBFBFB" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M5.33447 7.9999H26.6678" stroke="#FBFBFB" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
 			</button>
 			</div>
       </header>
@@ -87,15 +91,7 @@ const HEADER = styled.div`
   *{
 	padding: 0;
 	margin: 0;
-	/* margin-bottom: 80px; */
-	/* padding-bottom: 80px; */
-	/* width: 1920px; */
-/* height: 100px; */
-/* gap: 330px */
-
-	/* width: 100%; */
-	  /* box-sizing: border-box; */
-    /* outline: 1px solid limegreen !important; */
+	
   }
 .login-btn{
 	background-color: black;
@@ -134,7 +130,7 @@ header {
 	font-size: small;
 	/* position:fixed; */
 	z-index: 100;
-	width: 100%;
+	/* width: 100%; */
 }
 
 nav a {
@@ -146,11 +142,10 @@ nav a {
 }
 
 nav a:hover {
-	color: black;
+	color: #a200ff;
 	scale: 1.1;
 	transition: 500ms;
 	text-decoration: solid underline   #283593;
-
 }
 
 header .nav-btn {
@@ -177,22 +172,14 @@ nav{
     margin: auto;
 }
 
-.blackDot{
-    background-color: rgb(101, 101, 101);
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-}
+
 .logoText{
 	font-size: x-large;
 	font-weight: 800;
 	text-decoration: none;
 	color: white;
 }
-.lodo{
-    font-size: larger;
-    width: fit-content;
-}
+
 .navIcons{
     display: flex;
     gap: 20px;
